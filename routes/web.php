@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+/**
+ * Rota de Fallback
+ */
+Route::fallback(function () {
+    return "Rota inexistente";
+});
